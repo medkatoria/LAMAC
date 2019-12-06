@@ -1,20 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family:Arial, Helvetica, sans-serif;
 }
 .header{
 padding:30px;
-background-color:beige;
 color:red;
 font-style: italic;
 font-weight: bold;
 font-size: 30px;
 text-align:center;
+background-image: url("https://www.lamachineacoudre.ch/var/m_0/0c/0c9/27945/9607523-DSC_0448_edited_4.w1900.jpg");
+background-position:center;
+background-size:cover;
+
 }
 
 .navbar{
   display:flex;
+  position: -webkit-sticky;
+  position:sticky;
+  top:0;
   background-color:black;
-  align-content: center;
+  align-items: center;
 }
 
 .navbar a {
@@ -23,12 +33,17 @@ text-align:center;
   text-decoration:none;
   text-align:center;
 }
-.navbar a:hover {
+.navbar a:hover:not(.active) {
   background-color:crimson;
   color:black;
 }
 
-.row{
+.navbar a.active{
+  background-color:blue;
+  color:white;
+}
+
+.row {
   display:flex;
   flex-wrap:wrap;
 }
@@ -37,17 +52,18 @@ text-align:center;
   flex:30%;
   background-color:grey;
   color:blue;
+  padding:20px;
 }
 .main{
   flex:70%;
   background-color:lightgrey;
-  padding:50px;
+  padding:20px;
 }
 .footer{
   background-color:aliceblue;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 100px) {
   .row, .navbar{
     flex-direction:column;
   }
