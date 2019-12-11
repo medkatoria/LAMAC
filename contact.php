@@ -14,9 +14,64 @@
   <style>
           * {
             font-family: "Roboto", sans-serif
-          }vca
+          }
+          .id01 {
+             color: "w3-red"
+    }
   </style>
 </head>
+
+<?php
+$nomErr = $mailErr = $messageErr = $prenomErr =$phoneErr = "";
+$nom = $mail = $prenom = $message = $phone = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["nom"])) {
+    $nomErr = "Une indication du nom est requise.";
+  }
+  else {
+    $nom = test_imput($_POST["nom"]);
+    if (!preg_match("/^[a-zA-Z  ]*$/",$nom)) {
+      $nomErr = "Seuls les lettres et les espaces sont autorisés.";
+    }
+  }
+  if (empty($_POST["prenom"])) {
+    $prenomErr = "Une indication du nom est requise.";
+  }
+  else {
+    $prenom = test_imput($_POST["nom"]);
+    if (!preg_match("/^[a-zA-Z  ]*$/",$prenom)) {
+      $prenomErr = "Seuls les lettres et les espaces sont autorisés.";
+    }
+  }
+
+  if (empty($_POST["mail"])){
+    $mailErr = "Une adresse email est requise.";
+    else {
+    $mail = test_input($_POST["mail"]);
+    if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+      $mailErr = "Le format de l'adresse email est incorrect.";
+    }
+    }
+    if (empty($_POST["phone"])) {
+      $phoneErr = "Numéro de téléphone manquant.";
+    } else {
+      $phone = test_imput($_POST["phone"]);
+      if (!preg_match("[-a-zA-Z]",$phone)) {
+        $phone = "Numéro de téléphone erroné.";
+      }
+    }
+    if (empty($_POST["message"])) {
+      $messageErr = "Le message est vide.";
+      else {
+        $message = test_imput($_POST["message"]);
+      }
+    }
+  }
+ }
+}
+?>
+
 <body class="w3-light-grey">
 
 	<!-- Entete -->
@@ -32,16 +87,16 @@
 <div class="w3-bar w3-border w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
     <a href="/index.html" class="w3-light-grey w3-bar-item w3-button">Accueil</a>
     <a href="/gamme.html" class="w3-light-grey w3-bar-item w3-button">Gamme elna</a>
-    <a href="/contact.html" class="w3-red w3-bar-item w3-button">Contact</a>
+    <a href="/contact.php" class="w3-red w3-bar-item w3-button">Contact</a>
     </div>
   </header>
 
 <!-- nav petit écran -->
 <div class="w3-center w3-hide-large w3-hide-medium">
     <div class="w3-bar w3-border">
-    <a href="/index.html" class="w3-red w3-bar-item w3-button">Accueil</a>
+    <a href="/index.html" class="w3-light-grey w3-bar-item w3-button">Accueil</a>
     <a href="/gamme.html" class="w3-light-grey w3-bar-item w3-button">Gamme elna</a>
-    <a href="/contact.html" class="w3-light-grey w3-bar-item w3-button">Contact</a>
+    <a href="/contact.php" class="w3-red w3-bar-item w3-button">Contact</a>
     </div>
 </div>
 
@@ -86,7 +141,7 @@
       <div class="w3-col" style="width:50px">
         <i class="material-icons w3-xlarge">place</i>
       </div>
-      <div class="w3-rest">Chemin de la Grande-gîte 56, CH-1630 Bulle
+      <div class="w3-rest">Chemin de la Grande-gîte 56, CH-1630 Bulle</p>
       </div>
     </div>
   </div>
@@ -94,21 +149,26 @@
   <div class="w3-half">
     <div class="w3-container w3-card w3-blue w3-section">
       <div class="w3-container w3-card w3-red w3-margin-top w3-padding w3-margin-bottom w3-mobile">&#x25B7; FORMULAIRE DE CONTACT</div>
-        <form class="w3-container">
-          <label>Prénom :</label>
-          <input class="w3-input" type="text">
+        <form method="post" class="w3-container w3-section">
           <label>Nom :</label>
-          <input class="w3-input" type="text">
+          <input class="w3-input" name="nom" type="text" value="<?php echo $nom;?>"><span class="id01"><?php echo $nomErr;?></id>
+          <label>Nom :</label>
+          <input class="w3-input" name="prenom" type="text" value="<?php echo $prenom;?>"><span class="id01"><?php echo $prenomErr;?></id>
           <label>Téléphone :</label>
-          <input class="w3-input" type="number">
+          <input class="w3-input" name="phone" type="text" value="<?php echo $phone;?>"><span class="id01"><?php echo $phoneErr;?></id>
+          <label>Courriel :</label>
+          <input class="w3-input" name="mail" type="text" value="<?php echo $mail;?>"><span class="id01"><?php echo $mailErr;?></id>
           <label>Message :</label>
-          <input class="w3-input" type="text">
-          <input class="w3-input" type="submit">
+          <input class="w3-input" name="message" type="text" value="<?php echo $message;?>"><span class="id01"><?php echo $messageErr;?></id>
+          <p></p>
+          <input class="w3-input" type="submit" value="Submit">
         </form>
       </div>
     </div>
   </div>
 </div>
+
+
 
 <!-- footer -->
 <footer class="w3-container w3-content w3-green w3-margin-top w3-center" style="max-width:1200px;">
