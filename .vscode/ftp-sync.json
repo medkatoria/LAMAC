@@ -1,6 +1,6 @@
 {
-    "remotePath": "./",
-    "host": "ftp.lamachineacoudre.ch",
+    "remotePath": "./w3.lamachineacoudre.ch/public_html/",
+    "host": "ftp.w3.lamachineacoudre.ch",
     "username": "2103194_medka",
     "password": "Gungnir8",
     "port": 21,
