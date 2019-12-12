@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <title>La Machine à Coudre</title>
       <meta charset="UTF-8">
@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="/theme.html">
       <style>
           * {
             font-family: "Roboto", sans-serif
@@ -26,7 +27,7 @@
 
 <!-- Entete -->
 <header class="w3-display-container w3-content w3-center w3-section" style="max-width:1200px;">
-<img class="w3-image" src="/files/id/header.jpg" style="max-width:1200px;">
+<img class="w3-image" src="/files/id/header.jpg" style="width:100%">
     <div class="w3-display-middle w3-padding-large w3-border w3-small w3-text-red w3-light-grey w3-card-4">
     <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">La Machine à Coudre</h1>
     <h3 class="w3-hide-large" style="white-space:nowrap">La Machine à Coudre</h3>
@@ -35,8 +36,8 @@
 
 <!-- nav standard -->
     <div class="w3-bar w3-border w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-    <a href="/index.html" class="w3-red w3-bar-item w3-button">Accueil</a>
-    <a href="/gamme.html" class="w3-light-grey w3-bar-item w3-button">Gamme elna</a>
+    <a href="/index.html" class="w3-theme-d2 w3-bar-item w3-button">Accueil</a>
+    <a href="/gamme.html" class="w3-theme-i5 w3-bar-item w3-button">Gamme elna</a>
     <a href="/contact.php" class="w3-light-grey w3-bar-item w3-button">Contact</a>
     </div>
 </header>
@@ -147,6 +148,7 @@
 <!-- footer -->
 <footer class="w3-container w3-content w3-green w3-margin-top w3-center" style="max-width:1200px;">
   <p>Réalisé en W3.CSS</p>
+  </footer>
 
 <!-- script pour slideshow -->
 <script>
@@ -173,8 +175,10 @@ function showDivs(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" w3-red", "");
   }
+  
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-red";
+  setTimeout(showSlides, 2000);
 }
 </script>
 </body>
