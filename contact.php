@@ -16,61 +16,11 @@
             font-family: "Roboto", sans-serif
           }
           .id01 {
-             color: "w3-red"
+             color:red
     }
   </style>
 </head>
 
-<?php
-$nomErr = $mailErr = $messageErr = $prenomErr =$phoneErr = "";
-$nom = $mail = $prenom = $message = $phone = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["nom"])) {
-    $nomErr = "Une indication du nom est requise.";
-  }
-  else {
-    $nom = test_imput($_POST["nom"]);
-    if (!preg_match("/^[a-zA-Z  ]*$/",$nom)) {
-      $nomErr = "Seuls les lettres et les espaces sont autorisés.";
-    }
-  }
-  if (empty($_POST["prenom"])) {
-    $prenomErr = "Une indication du nom est requise.";
-  }
-  else {
-    $prenom = test_imput($_POST["nom"]);
-    if (!preg_match("/^[a-zA-Z  ]*$/",$prenom)) {
-      $prenomErr = "Seuls les lettres et les espaces sont autorisés.";
-    }
-  }
-
-  if (empty($_POST["mail"])){
-    $mailErr = "Une adresse email est requise.";
-    else {
-    $mail = test_input($_POST["mail"]);
-    if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-      $mailErr = "Le format de l'adresse email est incorrect.";
-    }
-    }
-    if (empty($_POST["phone"])) {
-      $phoneErr = "Numéro de téléphone manquant.";
-    } else {
-      $phone = test_imput($_POST["phone"]);
-      if (!preg_match("[-a-zA-Z]",$phone)) {
-        $phone = "Numéro de téléphone erroné.";
-      }
-    }
-    if (empty($_POST["message"])) {
-      $messageErr = "Le message est vide.";
-      else {
-        $message = test_imput($_POST["message"]);
-      }
-    }
-  }
- }
-}
-?>
 
 <body class="w3-light-grey">
 
@@ -144,31 +94,84 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="w3-rest">Chemin de la Grande-gîte 56, CH-1630 Bulle</p>
       </div>
     </div>
+    <div class="w3-container w3-section w3-border">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.927404224049!2d7.053296684513349!3d46.62759939919676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e630a721fefe3%3A0x5b9776b6ea381ddf!2sLa%20machine%20%C3%A0%20coudre!5e0!3m2!1sfr!2sch!4v1576104579888!5m2!1sfr!2sch" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
   </div>
 </div>
   <div class="w3-half">
     <div class="w3-container w3-card w3-blue w3-section">
       <div class="w3-container w3-card w3-red w3-margin-top w3-padding w3-margin-bottom w3-mobile">&#x25B7; FORMULAIRE DE CONTACT</div>
-        <form method="post" class="w3-container w3-section">
-          <label>Nom :</label>
-          <input class="w3-input" name="nom" type="text" value="<?php echo $nom;?>"><span class="id01"><?php echo $nomErr;?></id>
-          <label>Nom :</label>
-          <input class="w3-input" name="prenom" type="text" value="<?php echo $prenom;?>"><span class="id01"><?php echo $prenomErr;?></id>
-          <label>Téléphone :</label>
-          <input class="w3-input" name="phone" type="text" value="<?php echo $phone;?>"><span class="id01"><?php echo $phoneErr;?></id>
-          <label>Courriel :</label>
-          <input class="w3-input" name="mail" type="text" value="<?php echo $mail;?>"><span class="id01"><?php echo $mailErr;?></id>
-          <label>Message :</label>
-          <input class="w3-input" name="message" type="text" value="<?php echo $message;?>"><span class="id01"><?php echo $messageErr;?></id>
+        <form method="post" class="w3-container w3-section" action="/envoi_form.php"> <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+          <label>Nom : <span class="id01"><?php echo $nomErr;?></label>
+          <input class="w3-input" name="nom" type="text">
+          <label>Prénom : <span class="id01"><?php echo $prenomErr;?></label>
+          <input class="w3-input" name="prenom" type="text">
+          <label>Téléphone : <span class="id01"><?php echo $phoneErr;?></label>
+          <input class="w3-input" name="phone" type="text">
+          <label>Courriel : <span class="id01"><?php echo $mailErr;?></label>
+          <input class="w3-input" name="mail" type="text">
+          <label>Message : <span class="id01"><?php echo $messageErr;?></label>
+          <textarea class="w3-input" name="message"></textarea>
           <p></p>
-          <input class="w3-input" type="submit" value="Submit">
+          <input class="w3-input" type="submit">
         </form>
       </div>
     </div>
   </div>
 </div>
 
+<?php
+$nomErr = $mailErr = $messageErr = $prenomErr = $phoneErr = "";
+$nom = $mail = $prenom = $message = $phone = "";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["nom"])) {
+    $nomErr = "Une indication du nom est requise.";
+  }  else {
+    $nom = test_imput($_POST["nom"]);
+    if (!preg_match("/^[a-zA-Z  ]*$/",$nom)) {
+      $nomErr = "Seuls les lettres et les espaces sont autorisés.";
+    }
+  }
+  if (empty($_POST["prenom"])) {
+    $prenomErr = "Une indication du nom est requise.";
+  }  else {
+    $prenom = test_imput($_POST["prenom"]);
+    if (!preg_match("/^[a-zA-Z  ]*$/",$prenom)) {
+      $prenomErr = "Seuls les lettres et les espaces sont autorisés.";
+    }
+  }
+  if (empty($_POST["mail"])) {
+    $mailErr = "Une adresse email est requise.";
+  } else {
+    $mail = test_input($_POST["mail"]);
+    if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+      $mailErr = "Le format de l'adresse email est incorrect.";
+    }
+    }
+    if (empty($_POST["phone"])) {
+      $phoneErr = "Le numéro de téléphone est nécessaire.";
+    } else {
+      $phone = test_imput($_POST["phone"]);
+      if (!preg_match("[-a-zA-Z]",$phone)) {
+        $phone = "Le numéro de téléphone est erroné.";
+      }
+    }
+    if (empty($_POST["message"])) {
+      $messageErr = "Le message est vide.";
+    } else {
+        $message = test_imput($_POST["message"]);
+      }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
 
 <!-- footer -->
 <footer class="w3-container w3-content w3-green w3-margin-top w3-center" style="max-width:1200px;">
