@@ -95,14 +95,15 @@
       </div>
     </div>
     <div class="w3-container w3-section w3-border">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.927404224049!2d7.053296684513349!3d46.62759939919676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e630a721fefe3%3A0x5b9776b6ea381ddf!2sLa%20machine%20%C3%A0%20coudre!5e0!3m2!1sfr!2sch!4v1576104579888!5m2!1sfr!2sch" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.927404224049!2d7.053296684513349!3d46.62759939919676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e630a721fefe3%3A0x5b9776b6ea381ddf!2sLa%20machine%20%C3%A0%20coudre!5e0!3m2!1sfr!2sch!4v1576104579888!5m2!1sfr!2sch" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="">
+      </iframe>
     </div>
   </div>
 </div>
   <div class="w3-half">
     <div class="w3-container w3-card w3-blue w3-section">
       <div class="w3-container w3-card w3-red w3-margin-top w3-padding w3-margin-bottom w3-mobile">&#x25B7; FORMULAIRE DE CONTACT</div>
-        <form method="post" class="w3-container w3-section" action="/envoi_form.php"> <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+        <form method="post" class="w3-container w3-section" action="/envoi_form.php">
           <label>Nom : <span class="id01"><?php echo $nomErr;?></label>
           <input class="w3-input" name="nom" type="text">
           <label>Prénom : <span class="id01"><?php echo $prenomErr;?></label>
