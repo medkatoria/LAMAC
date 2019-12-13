@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php
 function test_input($data) {
     $data = trim($data);
@@ -6,3 +8,4 @@ function test_input($data) {
     return $data;
   }
 ?>
+</html>
