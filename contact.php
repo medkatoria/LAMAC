@@ -75,10 +75,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <!-- Entete -->
   <header class="w3-display-container w3-content w3-center w3-section" style="max-width:1200px;">
-    <img class="w3-image" src="files/id/header.jpg" style="width:100%;">
-    <div class="w3-display-middle w3-padding-large w3-small w3-red w3-card-4">
-      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">La Machine à Coudre</h1>
-      <h3 class="w3-hide-large" style="white-space:nowrap">La Machine à Coudre</h3>
+    <img class="w3-image" src="/files/id/header.jpg" style="width:100%">
+    <!-- petit écran -->
+    <div class="w3-container w3-padding w3-red w3-card-4 w3-hide-medium w3-hide-large">
+      <h3 class="w3-hide-large w3-hide-medium" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b>
+      </h3>
+      <h6>Réparation, vente et conseil</h6>
+    </div>
+    <!-- grand et moyen écran -->
+    <div class="w3-display-middle w3-padding-large w3-red w3-card-4 w3-hide-small">
+      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="font-family:arial;white-space:nowrap;"><b>La machine à
+          coudre</b></h1>
+      <h3 class="w3-hide-large" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b></h3>
       <h4>Réparation, vente et conseil</h4>
     </div>
 
@@ -147,7 +155,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </div>
         </div>
         <div class="w3-container w3-section w3-border">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.927404224049!2d7.053296684513349!3d46.62759939919676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e630a721fefe3%3A0x5b9776b6ea381ddf!2sLa%20machine%20%C3%A0%20coudre!5e0!3m2!1sfr!2sch!4v1576104579888!5m2!1sfr!2sch" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.927404224049!2d7.053296684513349!3d46.62759939919676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e630a721fefe3%3A0x5b9776b6ea381ddf!2sLa%20machine%20%C3%A0%20coudre!5e0!3m2!1sfr!2sch!4v1576104579888!5m2!1sfr!2sch" width="400" height="300" frameborder="0" style="width:100%;border:0;" allowfullscreen="">
           </iframe>
         </div>
       </div>

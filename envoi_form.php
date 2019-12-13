@@ -42,27 +42,35 @@ mail($emailTo, $mailSujet, $mailBody, $headers);
 
   <!-- Entete -->
   <header class="w3-display-container w3-content w3-center w3-section" style="max-width:1200px;">
-    <img class="w3-image" src="/files/id/header.jpg" style="max-width:1200px;">
-    <div class="w3-display-middle w3-padding-large w3-border w3-small w3-text-red w3-light-grey w3-card-4">
-      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">La Machine à Coudre</h1>
-      <h3 class="w3-hide-large" style="white-space:nowrap">La Machine à Coudre</h3>
+    <img class="w3-image" src="/files/id/header.jpg" style="width:100%">
+    <!-- petit écran -->
+    <div class="w3-container w3-padding w3-red w3-card-4 w3-hide-medium w3-hide-large">
+      <h3 class="w3-hide-large w3-hide-medium" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b>
+      </h3>
+      <h6>Réparation, vente et conseil</h6>
+    </div>
+    <!-- grand et moyen écran -->
+    <div class="w3-display-middle w3-padding-large w3-red w3-card-4 w3-hide-small">
+      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="font-family:arial;white-space:nowrap;"><b>La machine à
+          coudre</b></h1>
+      <h3 class="w3-hide-large" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b></h3>
       <h4>Réparation, vente et conseil</h4>
     </div>
 
     <!-- nav standard -->
     <div class="w3-bar w3-border w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-      <a href="/index.html" class="w3-light-grey w3-bar-item w3-button">Accueil</a>
-      <a href="/gamme.html" class="w3-light-grey w3-bar-item w3-button">Gamme elna</a>
-      <a href="/contact.php" class="w3-red w3-bar-item w3-button">Contact</a>
+      <a href="/index.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
+      <a href="/gamme.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
+      <a href="/contact.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Contact</a>
     </div>
   </header>
 
   <!-- nav petit écran -->
   <div class="w3-center w3-hide-large w3-hide-medium">
     <div class="w3-bar w3-border">
-      <a href="/index.html" class="w3-light-grey w3-bar-item w3-button">Accueil</a>
-      <a href="/gamme.html" class="w3-light-grey w3-bar-item w3-button">Gamme elna</a>
-      <a href="/contact.php" class="w3-red w3-bar-item w3-button">Contact</a>
+      <a href="/index.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
+      <a href="/gamme.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
+      <a href="/contact.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Contact</a>
     </div>
   </div>
 
