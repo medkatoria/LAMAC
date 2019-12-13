@@ -35,14 +35,14 @@ $headers = "From: info@lamachineacoudre.ch";
 
 mail($emailTo, $mailSujet, $mailBody, $headers);
 
-# header("location: /index.html");
+# header("location: /index.php");
 ?>
 
 <body class="w3-light-grey">
 
   <!-- Entete -->
   <header class="w3-display-container w3-content w3-center w3-section" style="max-width:1200px;">
-    <img class="w3-image" src="/files/id/header.jpg" style="width:100%">
+  <img class="w3-image" src="/files/id/header.jpg" alt="header" style="width:100%">
     <!-- petit écran -->
     <div class="w3-container w3-padding w3-red w3-card-4 w3-hide-medium w3-hide-large">
       <h3 class="w3-hide-large w3-hide-medium" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b>
@@ -55,12 +55,13 @@ mail($emailTo, $mailSujet, $mailBody, $headers);
           coudre</b></h1>
       <h3 class="w3-hide-large" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b></h3>
       <h4>Réparation, vente et conseil</h4>
+
     </div>
 
     <!-- nav standard -->
     <div class="w3-bar w3-border w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-      <a href="/index.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
-      <a href="/gamme.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
+      <a href="/index.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
+      <a href="/gamme.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
       <a href="/contact.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Contact</a>
     </div>
   </header>
@@ -68,8 +69,8 @@ mail($emailTo, $mailSujet, $mailBody, $headers);
   <!-- nav petit écran -->
   <div class="w3-center w3-hide-large w3-hide-medium">
     <div class="w3-bar w3-border">
-      <a href="/index.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
-      <a href="/gamme.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
+      <a href="/index.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
+      <a href="/gamme.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
       <a href="/contact.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Contact</a>
     </div>
   </div>
@@ -81,7 +82,7 @@ mail($emailTo, $mailSujet, $mailBody, $headers);
     <div class="w3-row-padding">
       <div class="w3-container w3-center w3-card w3-amber w3-section">
         <h1>Merci pour votre message.</h1>
-        <a href="/index.html">Retour à l'accueil</a>
+        <a href="/index.php">Retour à l'accueil</a>
       </div>
     </div>
   </div>

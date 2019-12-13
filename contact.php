@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <!-- Entete -->
   <header class="w3-display-container w3-content w3-center w3-section" style="max-width:1200px;">
-    <img class="w3-image" src="/files/id/header.jpg" style="width:100%">
+  <img class="w3-image" src="/files/id/header.jpg" alt="header" style="width:100%">
     <!-- petit écran -->
     <div class="w3-container w3-padding w3-red w3-card-4 w3-hide-medium w3-hide-large">
       <h3 class="w3-hide-large w3-hide-medium" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b>
@@ -92,8 +92,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- nav standard -->
     <div class="w3-bar w3-border w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-      <a href="/index.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
-      <a href="/gamme.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
+      <a href="/index.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
+      <a href="/gamme.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
       <a href="/contact.php" class="w3-red w3-bar-item w3-button">Contact</a>
     </div>
   </header>
@@ -101,8 +101,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <!-- nav petit écran -->
   <div class="w3-center w3-hide-large w3-hide-medium">
     <div class="w3-bar w3-border">
-      <a href="/index.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
-      <a href="/gamme.html" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
+      <a href="/index.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
+      <a href="/gamme.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
       <a href="/contact.php" class="w3-red w3-bar-item w3-button">Contact</a>
     </div>
   </div>
@@ -155,7 +155,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </div>
         </div>
         <div class="w3-container w3-section w3-border">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.927404224049!2d7.053296684513349!3d46.62759939919676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e630a721fefe3%3A0x5b9776b6ea381ddf!2sLa%20machine%20%C3%A0%20coudre!5e0!3m2!1sfr!2sch!4v1576104579888!5m2!1sfr!2sch" width="400" height="300" frameborder="0" style="width:100%;border:0;" allowfullscreen="">
+          <iframe title="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.927404224049!2d7.053296684513349!3d46.62759939919676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e630a721fefe3%3A0x5b9776b6ea381ddf!2sLa%20machine%20%C3%A0%20coudre!5e0!3m2!1sfr!2sch!4v1576104579888!5m2!1sfr!2sch" width="400" height="300" frameborder="0" style="width:100%;border:0;" allowfullscreen="">
           </iframe>
         </div>
       </div>

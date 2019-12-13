@@ -29,7 +29,7 @@
 
   <!-- Entete  -->
   <header class="w3-display-container w3-content w3-center w3-section" style="max-width:1200px;">
-    <img class="w3-image" src="/files/id/header.jpg" style="width:100%">
+    <img class="w3-image" src="/files/id/header.jpg" alt="header" style="width:100%">
     <!-- petit écran -->
     <div class="w3-container w3-padding w3-red w3-card-4 w3-hide-medium w3-hide-large">
       <h3 class="w3-hide-large w3-hide-medium" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b>
@@ -47,8 +47,8 @@
   
     <!-- nav standard -->
     <div class="w3-bar w3-border w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-      <a href="/index.html" class="w3-red w3-bar-item w3-button">Accueil</a>
-      <a href="/gamme.html" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
+      <a href="/index.php" class="w3-red w3-bar-item w3-button">Accueil</a>
+      <a href="/gamme.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
       <a href="/contact.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Contact</a>
     </div>
   </header>
@@ -56,8 +56,8 @@
   <!-- nav petit écran -->
   <div class="w3-center w3-hide-large w3-hide-medium">
     <div class="w3-bar w3-border">
-      <a href="/index.html" class="w3-red w3-bar-item w3-button">Accueil</a>
-      <a href="/gamme.html" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
+      <a href="/index.php" class="w3-red w3-bar-item w3-button">Accueil</a>
+      <a href="/gamme.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Gamme elna</a>
       <a href="/contact.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Contact</a>
     </div>
   </div>
@@ -173,12 +173,12 @@
           <h3>Tutoriaux elna</h3>
         </div>
         <div class="w3-container w3-center w3-section">
-          <iframe width="auto" height="250" src="https://www.youtube.com/embed/bLuzokLSneU" name="video1"
+          <iframe width="auto" height="250" src="https://www.youtube.com/embed/bLuzokLSneU" title="video1"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
         <div class="w3-container w3-center w3-section">
-          <iframe width="auto" height="250" src="https://www.youtube.com/embed/ubXswt2dziw" name="video1"
+          <iframe width="auto" height="250" src="https://www.youtube.com/embed/ubXswt2dziw" title="video1"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
