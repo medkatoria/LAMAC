@@ -180,7 +180,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <label>Téléphone : <span class="id01"><?php echo $phoneErr; ?></label>
           <input class="w3-input" name="phone" type="text">
           <label>Courriel : <span class="id01"><?php echo $mailErr; ?></label>
-          <input class="w3-input" name="mail" type="text">
+          <input class="w3-input" name="mail" type="email">
           <label>Message : <span class="id01"><?php echo $messageErr; ?></label>
           <textarea class="w3-input" name="message"></textarea>
           <p></p>
