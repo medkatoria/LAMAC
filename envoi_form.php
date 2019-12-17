@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138219591-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138219591-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-138219591-1');
-</script> -->
+</script>
   <style>
     html {
       font-family: "lato", sans-serif
@@ -38,7 +38,7 @@ $message = htmlspecialchars($_POST["message"]);
 
 $mailSujet = "Prise de contact via le site internet";
 $mailBody = "Bonjour, \n Une personne a pris contact via le formulaire du site internet. \n Voici les informations envoyées : \n Nom: $nom \n Prénom: $prenom\n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message.";
-$emailTo = "igalaxia@gmail.com";
+$emailTo = "info@lamachineacoudre.ch, $mail";
 $headers = "From: info@lamachineacoudre.ch";
 
 
@@ -94,13 +94,17 @@ mail($emailTo, $mailSujet, $mailBody, $headers);
         <a href="/index.php">Retour à l'accueil</a>
       </div>
     </div>
-  </div>
 
 
-  <!-- footer -->
-  <footer class="w3-container w3-blue-gray w3-margin-top w3-center" style="max-width:1200px;">
-    <p>Réalisé en W3.CSS</p>
-  </footer>
+    <!-- footer -->
+    <footer class="w3-container w3-blue-gray w3-margin-top w3-center" style="max-width:1200px;">
+      <p>Réalisé en W3.CSS</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
 
 
 </body>

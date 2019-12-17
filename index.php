@@ -2,26 +2,49 @@
 <html lang="fr">
 
 <head>
-  <title>La Machine à Coudre</title>
+  <title>La Machine à Coudre - Accueil</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Elna Pfaff  Singer Brother Bernina réparation réparation de machines réparation de machines à coudre réparation de machines à coudre Bulle réparation de machines à coudre Suisse vente et réparation vente et réparation de machines vente et réparation de machines à coudre vente et réparation de machines à coudre Bulle vente et réparation de machines à coudre Suisse fournitures aiguisage ciseaux machine machines coudre couture machine à coudre machines à coudre machine a coudre machines a coudre la machine à coudre la machine a coudre machineàcoudre machineacoudre lamachineàcoudre lamachineacoudre Bulle Gîte Gite Grande-Gîte Grande-Gite" />
   <meta name="description" content="Vente et réparation de machines à coudre (Elna partner)." />
-  <meta name="robots" content="noindex,nofollow" />
-  <title>La machine à coudre - La machine à coudre</title>
+  <meta name="robots" content="nofollow" />
   <link href="/files/id/favicon.png" rel="SHORTCUT ICON" type="image/png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href=
+  "https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138219591-1"></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138219591-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-138219591-1');
-</script> -->
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000000"
+    },
+    "button": {
+      "background": "#ffc107",
+      "text": "#000000"
+    }
+  },
+  "theme": "edgeless",
+  "position": "bottom-right",
+  "content": {
+    "message": "Ce site utilise des cookies pour améliorer votre navigation.",
+    "dismiss": "OK"
+  }
+});
+</script>
 
   <style>
     .mySlides {
@@ -33,12 +56,6 @@
     }
   </style>
 </head>
-
-<?php
-
-
-
-?>
 
 <body class="w3-light-gray">
 
@@ -98,7 +115,7 @@
           </div>
           <div class="w3-container w3-twothird">
             <p>Notre entreprise est spécialisée dans l'entretien préventif, la répartition ainsi que la vente et le conseil à
-              l'achat de machines à coudre, de brodeuses ou de surjeteuses.</p>
+              l'achat de machines à coudre, brodeuses ou surfileuses/surjeteuses.</p>
           </div>
         </div>
         <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
@@ -139,7 +156,7 @@
         </div>
         <ul class="w3-ul w3-small">
           <li> Vente de toute la gamme de machines à coudre et accessoires Elna</li>
-          <li> Démonstration de machines à coudre Elna </li>
+          <li> Démonstration de machines à coudre, brodeuses et surfileuses/surjeteuses Elna </li>
           <li> Service après-vente Elna</li>
           <li> Réparation toutes marques (demande de devis possible)</li>
           <li> Services d'entretien toutes marques</li>
@@ -204,6 +221,7 @@
 
     <!-- script pour slideshow -->
     <script>
+
       var slideIndex = 1;
       showDivs(slideIndex);
 
@@ -234,7 +252,6 @@
 
         x[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " w3-amber";
-        setTimeout(showSlides, 2000);
       }
     </script>
 </body>
