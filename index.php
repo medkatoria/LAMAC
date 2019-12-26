@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138219591-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -179,7 +179,7 @@ window.cookieconsent.initialise({
             </div>
             <img class="mySlides w3-image" src="/files/promo/001.jpg" style="width:100%">
             <img class="mySlides w3-image" src="/files/promo/002.jpg" style="width:100%">
-            <img class="mySlides w3-image" src="/files/promo/003.jpg" style="width:100%">
+            <!-- <img class="mySlides w3-image" src="/files/promo/003.jpg" style="width:100%"> -->
           </div>
 
           <div class="w3-center">
@@ -189,7 +189,7 @@ window.cookieconsent.initialise({
             </div>
             <button class="w3-button demo" onclick="currentDiv(1)">1</button>
             <button class="w3-button demo" onclick="currentDiv(2)">2</button>
-            <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+            <!-- <button class="w3-button demo" onclick="currentDiv(3)">3</button> -->
           </div>
 
 

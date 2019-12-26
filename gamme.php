@@ -219,10 +219,10 @@
                         <div class="w3-third">
                             <div class=" ">
                                 <img class="w3-image" src="/files/gamme/experience/experience_550_560_570.png"
-                                    alt="experience 550 560 570" style="width:100%;max-height:250px">
+                                    alt="experience 550 560 570a" style="width:100%;max-height:250px">
                                 <div class="w3-container">
                                     <a href="http://new.elna.com/ch/fr/modeles/experience/experience-550-560-570/">
-                                        <h5>eXperience 550, 560 et 570</h5>
+                                        <h5>eXperience 550, 560 et 570a</h5>
                                     </a>
                                 </div>
                             </div>
@@ -356,7 +356,7 @@
                 <h2>eXpressive</h2>
                 <div class="w3-container" style="max-height:400px">
                     <div class="w3-row-padding w3-margin-top">
-                        <div class="w3-third">
+                        <!-- <div class="w3-half">
                             <div class=" ">
                                 <img class="w3-image" src="/files/gamme/expressive/expressive_830.png" alt="expressive 830"
                                     style="width:100%;max-height:350px">
@@ -366,8 +366,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="w3-third">
+                        </div> -->
+                        <div class="w3-half">
                             <div class=" ">
                                 <img class="w3-image" src="/files/gamme/expressive/expressive_830L.png" alt="expressive 830L"
                                     style="width:100%;max-height:350px">
@@ -378,7 +378,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w3-third">
+                        <div class="w3-half">
                             <div class=" ">
                                 <img class="w3-image" src="/files/gamme/expressive/expressive_850.png" alt="expressive 850"
                                     style="width:100%;max-height:350px">
@@ -393,7 +393,7 @@
                 </div>
                 <div class="w3-container" style="max-height:400px">
                     <div class="w3-row-padding w3-section">
-                        <div class="w3-third">
+                        <!-- <div class="w3-third">
                             <div class=" ">
                                 <img class="w3-image" src="/files/gamme/expressive/expressive_860.png" alt="expressive 860"
                                     style="width:100%;max-height:350px">
@@ -403,8 +403,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="w3-third">
+                        </div> -->
+                        <div class="w3-half">
                             <div class=" ">
                                 <img class="w3-image" src="/files/gamme/expressive/expressive_920.png" alt="expressive 920"
                                     style="width:100%;max-height:350px">
@@ -415,7 +415,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w3-third">
+                        <div class="w3-half">
                             <div class=" ">
                                 <img class="w3-image" src="/files/gamme/expressive/expressive_970.png" alt="expressive 970"
                                     style="width:100%;max-height:350px">
