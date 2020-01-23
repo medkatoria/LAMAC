@@ -38,8 +38,8 @@ $message = htmlspecialchars($_POST["message"]);
 
 $mailSujet = "Prise de contact via le site internet";
 $mailBody = "Bonjour, \n Une personne a pris contact via le formulaire du site internet. \n Voici les informations envoyées : \n Nom: $nom \n Prénom: $prenom\n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message.";
-$emailTo = "info@lamachineacoudre.ch, $mail, igalaxia@gmail.com";
-$headers = "From: info@lamachineacoudre.ch";
+$emailTo = "lamachineacoudre@bluewin.ch, $mail, igalaxia@gmail.com";
+$headers = "From: lamachineacoudre@bluewin.ch";
 
 
 mail($emailTo, $mailSujet, $mailBody, $headers);

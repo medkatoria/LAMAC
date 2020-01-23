@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phoneErr = "Le numéro de téléphone est nécessaire.";
   } else {
     $phone = test_imput($_POST["phone"]);
-    if (!preg_match("[-a-zA-Z]", $phone)) {
+    if (!preg_match("/^[0-9 ]/", $phone)) {
       $phone = "Le numéro de téléphone est erroné.";
     }
   }
@@ -148,15 +148,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <i class="material-icons w3-xlarge">contact_phone</i>
           </div>
           <div class="w3-rest">
-            <a href="tel:+41774961589" <a>077 496 15 89</a></p>
+            <a href="tel:+41774961589">077 496 15 89</a></p>
           </div>
           <div class="w3-col" style="width:50px">
             <i class="material-icons w3-xlarge">contact_mail</i>
           </div>
           <div class="w3-rest">
-            <a href="mailto:lamachineacoudre@bluewin.ch" <a>lamachineacoudre(a)bluewin.ch</a></p>
+            <a href="mailto:lamachineacoudre@bluewin.ch">lamachineacoudre(a)bluewin.ch</a></p>
           </div>
           <div class="w3-col" style="width:50px">
+          
             <i class="material-icons w3-xlarge">place</i>
           </div>
           <div class="w3-rest">Chemin de la Grande-gîte 56, CH-1630 Bulle</p>

@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Elna Pfaff  Singer Brother Bernina réparation réparation de machines réparation de machines à coudre réparation de machines à coudre Bulle réparation de machines à coudre Suisse vente et réparation vente et réparation de machines vente et réparation de machines à coudre vente et réparation de machines à coudre Bulle vente et réparation de machines à coudre Suisse fournitures aiguisage ciseaux machine machines coudre couture machine à coudre machines à coudre machine a coudre machines a coudre la machine à coudre la machine a coudre machineàcoudre machineacoudre lamachineàcoudre lamachineacoudre Bulle Gîte Gite Grande-Gîte Grande-Gite" />
-  <meta name="description" content="Vente et réparation de machines à coudre (Elna partner)." />
+  <meta name="description" content="Entretien, réparation, vente et conseils à l'achat de machines à coudre (Elna partner)." />
   <meta name="robots" content="nofollow" />
   <link href="/files/id/favicon.png" rel="SHORTCUT ICON" type="image/png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -179,7 +179,8 @@ window.cookieconsent.initialise({
             </div>
             <img class="mySlides w3-image" src="/files/promo/001.jpg" style="width:100%">
             <img class="mySlides w3-image" src="/files/promo/002.jpg" style="width:100%">
-            <!-- <img class="mySlides w3-image" src="/files/promo/003.jpg" style="width:100%"> -->
+            <img class="mySlides w3-image" src="/files/promo/003.png" style="width:100%">
+            <img class="mySlides w3-image" src="/files/promo/004.png" style="width:100%">
           </div>
 
           <div class="w3-center">
@@ -189,7 +190,8 @@ window.cookieconsent.initialise({
             </div>
             <button class="w3-button demo" onclick="currentDiv(1)">1</button>
             <button class="w3-button demo" onclick="currentDiv(2)">2</button>
-            <!-- <button class="w3-button demo" onclick="currentDiv(3)">3</button> -->
+            <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+            <button class="w3-button demo" onclick="currentDiv(4)">4</button>
           </div>
 
 
