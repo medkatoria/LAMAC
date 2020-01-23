@@ -30,21 +30,27 @@
 
 <?php
 
-$nom = htmlspecialchars($_POST["nom"]);
-$prenom = htmlspecialchars($_POST["prenom"]);
-$mail = htmlspecialchars($_POST["mail"]);
-$phone = htmlspecialchars($_POST["phone"]);
-$message = htmlspecialchars($_POST["message"]);
+$nom = valid_donnees($_POST["nom"]);
+$prenom = valid_donnees($_POST["prenom"]);
+$mail = valid_donnees($_POST["mail"]);
+$phone = valid_donnees($_POST["phone"]);
+$message = valid_donnees($_POST["message"]);
+
+function valid_donnees($donnees){
+  $donnees = trim($donnees);
+  $donnees = stripslashes($donnees);
+  $donnees = htmlspecialchars($donnees);
+  return $donnees;
+}
 
 $mailSujet = "Prise de contact via le site internet";
-$mailBody = "Bonjour, \n Une personne a pris contact via le formulaire du site internet. \n Voici les informations envoyées : \n Nom: $nom \n Prénom: $prenom\n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message.";
+$mailBody = "Bonjour, \n Une personne a pris contact par l'intermédiaire du formulaire du site internet. \n Voici le message : \n Nom: $nom \n Prénom: $prenom\n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message.";
 $emailTo = "lamachineacoudre@bluewin.ch, $mail, igalaxia@gmail.com";
 $headers = "From: lamachineacoudre@bluewin.ch";
 
-
 mail($emailTo, $mailSujet, $mailBody, $headers);
 
-# header("location: /index.php");
+
 ?>
 
 <body class="w3-light-grey">
@@ -90,7 +96,7 @@ mail($emailTo, $mailSujet, $mailBody, $headers);
     <!-- grille -->
     <div class="w3-row-padding">
       <div class="w3-container w3-center w3-card w3-amber w3-section">
-        <h1>Merci pour votre message.</h1>
+        <h1>Merci pour votre message. Nous y répondrons dès que possible.</h1>
         <a href="/index.php">Retour à l'accueil</a>
       </div>
     </div>

@@ -28,57 +28,6 @@
   </style>
 </head>
 
-<?php
-
-include "settings.php";
-
-$nomErr = $mailErr = $messageErr = $prenomErr = $phoneErr = "";
-$nom = $mail = $prenom = $message = $phone = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["nom"])) {
-    $nomErr = "Une indication du nom est requise.";
-  } else {
-    $nom = test_imput($_POST["nom"]);
-    if (!preg_match("/^[a-zA-Z  ]*$/", $nom)) {
-      $nomErr = "Seuls les lettres et les espaces sont autorisés.";
-    }
-  }
-  if (empty($_POST["prenom"])) {
-    $prenomErr = "Une indication du nom est requise.";
-  } else {
-    $prenom = test_imput($_POST["prenom"]);
-    if (!preg_match("/^[a-zA-Z  ]*$/", $prenom)) {
-      $prenomErr = "Seuls les lettres et les espaces sont autorisés.";
-    }
-  }
-  if (empty($_POST["mail"])) {
-    $mailErr = "Une adresse email est requise.";
-  } else {
-    $mail = test_input($_POST["mail"]);
-    if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-      $mailErr = "Le format de l'adresse email est incorrect.";
-    }
-  }
-  if (empty($_POST["phone"])) {
-    $phoneErr = "Le numéro de téléphone est nécessaire.";
-  } else {
-    $phone = test_imput($_POST["phone"]);
-    if (!preg_match("/^[0-9 ]/", $phone)) {
-      $phone = "Le numéro de téléphone est erroné.";
-    }
-  }
-  if (empty($_POST["message"])) {
-    $messageErr = "Le message est vide.";
-  } else {
-    $message = test_imput($_POST["message"]);
-  }
-}
-
-
-
-?>
-
 <body class="w3-light-grey">
 
   <!-- Entete -->
@@ -173,16 +122,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <h3>Formulaire de contact</h3>
         </div>
         <form method="post" class="w3-container w3-section" action="/envoi_form.php">
-          <label>Nom : <span class="id01"><?php echo $nomErr; ?></label>
-          <input class="w3-input" name="nom" type="text">
-          <label>Prénom : <span class="id01"><?php echo $prenomErr; ?></label>
-          <input class="w3-input" name="prenom" type="text">
-          <label>Téléphone : <span class="id01"><?php echo $phoneErr; ?></label>
-          <input class="w3-input" name="phone" type="text">
-          <label>Courriel : <span class="id01"><?php echo $mailErr; ?></label>
-          <input class="w3-input" name="mail" type="email">
-          <label>Message : <span class="id01"><?php echo $messageErr; ?></label>
-          <textarea class="w3-input" name="message"></textarea>
+          <label>Nom : </label>
+          <input class="w3-input" name="nom" type="text" required maxlenght="40">
+          <label>Prénom : </label>
+          <input class="w3-input" name="prenom" type="text" required maxlenght="40">
+          <label>Téléphone : </label>
+          <input class="w3-input" name="phone" type="text" required pattern="^(?:(?:|0{1,2}|\+{0,2})41(?:|\(0\))|0)([1-9]\d)(\d{3})(\d{2})(\d{2})$">
+          <label>Courriel : </label>
+          <input class="w3-input" name="mail" type="email" required pattern="^[A-Za-z]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$">
+          <label>Message : </label>
+          <textarea class="w3-input" name="message" required></textarea>
           <p></p>
           <input class="w3-input w3-orange" type="submit">
         </form>

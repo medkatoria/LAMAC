@@ -24,28 +24,6 @@
 
   gtag('config', 'UA-138219591-1');
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#000000"
-    },
-    "button": {
-      "background": "#ffc107",
-      "text": "#000000"
-    }
-  },
-  "theme": "edgeless",
-  "position": "bottom-right",
-  "content": {
-    "message": "Ce site utilise des cookies pour améliorer votre navigation.",
-    "dismiss": "OK"
-  }
-});
-</script>
-
   <style>
     .mySlides {
       display: none;
@@ -193,10 +171,19 @@ window.cookieconsent.initialise({
             <button class="w3-button demo" onclick="currentDiv(3)">3</button>
             <button class="w3-button demo" onclick="currentDiv(4)">4</button>
           </div>
-
-
         </div>
+
         <div class="w3-container w3-mobile w3-margin-top w3-hide-small">
+          <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
+            <h3>Creative Time - le magasine couture de Elna</h3>
+          </div>
+          <div class="w3-container w3-center w3-section">
+          <object data="/files/creatime/creatime.pdf#view=fit" style="width:500px;height:600px" type="application/pdf" alt="Creative Time <a href="/files/creatime/creatime.pdf">Fichier à télécharger</a></object>
+        </div>
+      </div>
+
+        <!-- <div class="w3-container w3-mobile w3-margin-top w3-
+        hide-small">
           <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
             <h3>Tutoriaux elna</h3>
           </div>
@@ -206,9 +193,9 @@ window.cookieconsent.initialise({
           <div class="w3-container w3-center w3-section">
             <iframe width="auto" height="250" src="https://www.youtube.com/embed/ubXswt2dziw" title="video1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-        </div>
-      </div>
+        </div> -->
     </div>
+  </div>
 
 
     <!-- footer -->
