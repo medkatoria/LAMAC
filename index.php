@@ -100,7 +100,7 @@
           <h3>Notre partenaire</h3>
         </div>
         <div class="w3-container w3-section w3-center">
-          <img class="w3-image w3-hide-small" src="/files/id/logo_elna.png" alt="ELNA" style="max-height:200px;">
+          <a href="https://master.elna.com/fr/"><img class="w3-image w3-hide-small" src="/files/id/logo_elna.png" alt="ELNA" style="max-height:200px;"></a>
           <img class="w3-image w3-hide-large w3-hide-medium" src="/files/id/logo_elna.png" alt="ELNA" style="max-height:100px;">
         </div>
 
@@ -134,20 +134,24 @@
         </div>
         <ul class="w3-ul w3-small">
           <li> Vente de toute la gamme de machines à coudre et accessoires Elna</li>
-          <li> Démonstration de machines à coudre, brodeuses et surfileuses/surjeteuses Elna </li>
+          <li> Démonstration de machines
+           à coudre, brodeuses et surfileuses/surjeteuses Elna </li>
           <li> Service après-vente Elna</li>
           <li> Réparation toutes marques (demande de devis possible)</li>
           <li> Services d'entretien toutes marques</li>
           <li> Vente de fournitures pour machines</li>
           <li> Aiguisage de ciseaux</li>
         </ul>
-        <p style="text-align:center"><b></b><a href="/contact.php">N'hésitez pas à prendre contact avec nous pour toute
-            question ou pour de plus
-            amples informations!</b></a></p>
+        <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
+        <p style="text-align:center">N'hésitez pas à prendre contact avec nous pour toute question ou pour de plus amples informations!</p>
+        <p style="text-align:center"><button class="w3-button w3-border w3-light-grey w3-center"><a href="/contact.php">Contact</a></button></p>
+      </div>
       </div>
 
 
       <!-- colonne droite -->
+
+
       <div class="w3-half">
 
         <div class="w3-display-container w3-margin-top">
@@ -159,6 +163,7 @@
             <img class="mySlides w3-image" src="/files/promo/002.jpg" style="width:100%">
             <img class="mySlides w3-image" src="/files/promo/003.png" style="width:100%">
             <img class="mySlides w3-image" src="/files/promo/004.png" style="width:100%">
+            <img class="mySlides w3-image" src="/files/promo/005.png" style="width:100%">
           </div>
 
           <div class="w3-center">
@@ -170,6 +175,7 @@
             <button class="w3-button demo" onclick="currentDiv(2)">2</button>
             <button class="w3-button demo" onclick="currentDiv(3)">3</button>
             <button class="w3-button demo" onclick="currentDiv(4)">4</button>
+            <button class="w3-button demo" onclick="currentDiv(5)">5</button>
           </div>
         </div>
 
