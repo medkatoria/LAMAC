@@ -41,9 +41,8 @@
           <h6>Réparation, vente et conseil</h6>
         </div>
         <!-- grand et moyen écran -->
-        <div class="w3-display-middle w3-padding-large w3-red w3-card-4 w3-hide-small">
-          <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="font-family:arial;white-space:nowrap;"><b>La machine à
-              coudre</b></h1>
+        <div class="w3-display-bottommiddle w3-padding-large w3-red w3-card-4 w3-hide-small" style="bottom:50px">
+          <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b></h1>
           <h3 class="w3-hide-large" style="font-family:arial;white-space:nowrap;"><b>La machine à coudre</b></h3>
           <h4>Réparation, vente et conseil</h4>
         </div>
@@ -59,9 +58,10 @@
     <!-- nav petit écran -->
     <div class="w3-center w3-hide-large w3-hide-medium">
         <div class="w3-bar w3-border">
-            <a href="/index.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
-            <a href="/gamme.php" class="w3-red w3-bar-item w3-button">Gamme elna</a>
-            <a href="/contact.php" class="w3-light-grey w3-hover-pale-red w3-bar-item w3-button">Contact</a>
+        <a href="/index.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
+        <a href="/promo.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Promo</a>
+        <a href="/gamme.php" class="w3-red w3-bar-item w3-button">Gamme</a>
+        <a href="/contact.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Contact</a>
         </div>
     </div>
 
@@ -79,16 +79,16 @@
                     <ul class="w3-ul">
                         <li>La série <b>eXplore</b> de elna se compose de machines mécaniques de grande qualité et à un
                             prix très abordable.</br>
-                            La fourchette de prix s'étend entre 200.- CHF et 600.- CHF (TTC).*</li>
+                            La fourchette de prix s'étend entre 230.- CHF et 600.- CHF (TTC).*</li>
                         <li>Avec la série <b>eXperience</b>, l'électronique entre en action pour offrir un confort
                             d'utilisation optimal et un large choix de possibilité.</br>
-                            La fourchette de prix s'étend entre 500.- CHF et 1100.- CHF (TTC).*</li>
+                            La fourchette de prix s'étend entre 450.- CHF et 900.- CHF (TTC).*</li>
                         <li>La série <b>eXcellence</b> s'adresse à un public exigeant, et qui a besoin d'une machine
                             performante et endurante.</br>
-                            La fourchette de prix s'étend entre 1100.- CHF et 2750.- CHF (TTC).*</li>
+                            La fourchette de prix s'étend entre 1100.- CHF et 2900.- CHF (TTC).*</li>
                         <li>La série <b>eXtend</b> propose un éventail large de surjeteuses, avec des modèles différents
                             selon les besoins de chacun.</br>
-                            La fourchette de prix s'étend entre 400.- CHF et 1600.- CHF (TTC).*</li>
+                            La fourchette de prix s'étend entre 450.- CHF et 1700.- CHF (TTC).*</li>
                         <li>La série <b>eXpressive</b> propose une gamme de machine à broder assisté par l'informatique,
                             pour des rendus de haute qualité.</br>
                             La fourchette de prix s'étend entre 1900.- CHF et 6700.- CHF (TTC).*</li>

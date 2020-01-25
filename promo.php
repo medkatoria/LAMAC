@@ -53,7 +53,6 @@
       <h4>Réparation, vente et conseil</h4>
     </div>
 
-
     <!-- nav standard -->
     <div class="w3-bar w3-border w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
       <a href="/index.php" class="w3-red w3-bar-item w3-button">Accueil</a>
@@ -65,12 +64,13 @@
   <!-- nav petit écran -->
   <div class="w3-center w3-hide-large w3-hide-medium">
     <div class="w3-bar w3-border">
-    <a href="/index.php" class="w3-red w3-bar-item w3-button">Accueil</a>
-    <a href="/promo.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Promo</a>
-    <a href="/gamme.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Gamme</a>
-    <a href="/contact.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Contact</a>
+      <a href="/index.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Accueil</a>
+      <a href="/promo.php" class="w3-red w3-bar-item w3-button">Promo</a>
+      <a href="/gamme.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Gamme</a>
+      <a href="/contact.php" class="w3-light-gray w3-hover-pale-red w3-bar-item w3-button">Contact</a>
     </div>
   </div>
+
 
   <!-- structure -->
   <div class="w3-content w3-margin-top-large" style="max-width:1200px;">
@@ -79,67 +79,7 @@
       <!-- <div class="w3-container w3-yellow w3-mobile w3-section w3-center">
         <h3 class="w3-xxlarge"><b>Bienvenue!</b></h3>
       </div> -->
-      <!-- colonne gauche -->
-      <div class="w3-half">
-
-        <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
-          <h3>Notre entreprise</h3>
-        </div>
-        <div class="w3-row">
-          <div class="w3-container w3-third">
-            <img class="w3-image w3-hide-small w3-center" src="/files/id/logo_lamac.png" alt="ELNA" style="max-height:200px;">
-            <img class="w3-image w3-hide-large w3-hide-medium w3-center" src="/files/id/logo_lamac2.png" alt="ELNA" style="max-height:120px;">
-          </div>
-          <div class="w3-container w3-twothird">
-            <p>Notre entreprise est spécialisée dans l'entretien préventif, la répartition ainsi que la vente et le conseil à
-              l'achat de machines à coudre, brodeuses ou surfileuses/surjeteuses.</p>
-          </div>
-        </div>
-        <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
-          <h3>Notre partenaire</h3>
-        </div>
-        <div class="w3-container w3-section w3-center">
-          <a href="https://master.elna.com/fr/"><img class="w3-image w3-hide-small" src="/files/id/logo_elna.png" alt="ELNA" style="max-height:200px;"></a>
-          <img class="w3-image w3-hide-large w3-hide-medium" src="/files/id/logo_elna.png" alt="ELNA" style="max-height:100px;">
-        </div>
-
-        <div class="w3-hide-large w3-hide-medium">
-          <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
-          <h3>Promotions du moment</h3>
-          </div><p style="text-align:center">Consulter nos promotions sur <a href="/promo.php" style="color:orange"><b>notre page dédiée</b></a> 
-        </div>
-
-<!-- avantages -->
-        <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
-          <h3>Vos avantages</h3>
-        </div>
-        <ul class="w3-ul w3-small">
-          <li> Durée de la garantie étendue à <b>5 ans</b>, incluse dans le prix</li>
-          <li> Service après-vente (entretien, réparation) local, dans notre atelier</li>
-          <li> Conseils pour choisir le modèle le plus adapté à vos besoins</li>
-        </ul>
-        <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
-          <h3>Nos prestations</h3>
-        </div>
-        <ul class="w3-ul w3-small">
-          <li> Vente de toute la gamme de machines à coudre et accessoires Elna</li>
-          <li> Démonstration de machines
-           à coudre, brodeuses et surfileuses/surjeteuses Elna </li>
-          <li> Service après-vente Elna</li>
-          <li> Réparation toutes marques (demande de devis possible)</li>
-          <li> Services d'entretien toutes marques</li>
-          <li> Vente de fournitures pour machines</li>
-          <li> Aiguisage de ciseaux</li>
-        </ul>
-      <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
-        <p style="text-align:center">N'hésitez pas à prendre contact avec nous pour toute question ou pour de plus amples informations!</p>
-        <p style="text-align:center"><button class="w3-button w3-border w3-light-grey w3-center"><a href="/contact.php">Contact</a></button></p>
-      </div>
-    </div>
-
-      <!-- colonne droite -->
-      <div class="w3-half">
-        <div class="w3-display-container w3-margin-top w3-hide-small">
+        <div class="w3-display-container w3-margin-top">
           <div class="w3-content w3-margin-top">
             <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
               <h3>Promotions du moment</h3>
@@ -164,14 +104,28 @@
           </div>
         </div>
 
-        <div class="w3-container w3-mobile w3-margin-top w3-hide-small">
+        <div class="w3-container w3-mobile w3-margin-top">
           <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
             <h3>Creative Time - le magasine couture de Elna</h3>
           </div>
           <div class="w3-container w3-center w3-section">
-          <object data="/files/creatime/creatime.pdf#view=fit" style="max-width:100%;height:500px" type="application/pdf" alt="Creative Time <a href="/files/creatime/creatime.pdf">Fichier à télécharger</a></object>
+          <object data="/files/creatime/creatime.pdf#view=fit" style="max-width:100%;height:500px" type="application/pdf">
+          <p>Creative Time : <a href='files\creatime\creatime.pdf'>télécharger le magasine en PDF</a>!</object>
         </div>
       </div>
+
+        <div class="w3-container w3-mobile w3-margin-top w3-
+        hide-small">
+          <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
+            <h3>Tutoriaux elna</h3>
+          </div>
+          <div class="w3-container w3-center w3-section">
+            <iframe style="max-width:100%" src="https://www.youtube.com/embed/bLuzokLSneU" title="video1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="w3-container w3-center w3-section">
+            <iframe style="max-width:100%" src="https://www.youtube.com/embed/ubXswt2dziw" title="video1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
     </div>
   </div>
 
