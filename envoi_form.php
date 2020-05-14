@@ -40,6 +40,10 @@ $prenom = valid_donnees($_POST["prenom"]);
 $mail = valid_donnees($_POST["mail"]);
 $phone = valid_donnees($_POST["phone"]);
 $message = valid_donnees($_POST["message"]);
+$sec1 = valid_donnees($_POST["sec1"]);
+$sec2 = valid_donnees($_POST["sec2"]);
+$sec3 = valid_donnees($_POST["sec3"]);
+$secu = valid_donnees($_POST["secu"]);
 
 function valid_donnees($donnees){
   $donnees = trim($donnees);
@@ -49,22 +53,26 @@ function valid_donnees($donnees){
 }
 
 if (
-  (($_POST['sec1'] != 'sec')
+  (($sec1 = 'sec')
  
- || ($_POST['sec2'] != 'sec'))
+ || ($sec2 = 'sec'))
  
- || ($_POST['sec3'] != '') 
+ || ($sec3 = '') 
  
  ){
  
 $mailSujet = "Prise de contact via le site internet";
 $mailBody = "Bonjour, \n Une personne a pris contact par l'intermédiaire du formulaire du site internet. \n Voici le message : 
-  \n Nom: $nom \n Prénom: $prenom\n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message. \n [Navigateur : $navi]";
+  \n Nom: $nom \n Prénom: $prenom\n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message. \n [Navigateur : $navi ; sec1: $sec1 sec2: $sec2 sec3: $sec3]";
+$mailBody2 = "Spam détecté : \n Nom: $nom \n Prénom: $prenom\n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message. \n [Navigateur : $navi ; secu: $secu sec1: $sec1 sec2: $sec2 sec3: $sec3]";
 $emailTo = "lamachineacoudre@bluewin.ch, $mail, igalaxia@gmail.com";
+$emailTo2 = "igalaxia@gmail.com";
 $headers = "From: lamachineacoudre@bluewin.ch";
 
 mail($emailTo, $mailSujet, $mailBody, $headers);
 
+} else {
+  mail($emailTo2, $mailSujet, $mailBody2, $headers);
 }
 ?>
 
@@ -111,7 +119,7 @@ mail($emailTo, $mailSujet, $mailBody, $headers);
     <!-- grille -->
     <div class="w3-row-padding">
       <div class="w3-container w3-center w3-card w3-amber w3-section">
-        <h1>Merci pour votre message. Nous y répondrons dès que possible.</h1>
+        <h4>Merci pour votre message. Nous y répondrons dès que possible.</h4>
         <a href="/index.php">Retour à l'accueil</a>
       </div>
     </div>

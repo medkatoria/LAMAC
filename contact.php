@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138219591-1"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -133,19 +134,21 @@
         </div>
         <form id="form" method="post" class="w3-container w3-section" action="/envoi_form.php">
           <label>Nom : </label>
-          <input class="w3-input" id="nom" type="text" required maxlenght="40">
+          <input class="w3-input" name="nom" type="text" required maxlength="40">
           <label>Prénom : </label>
-          <input class="w3-input" id="prenom" type="text" required maxlenght="40">
-          <label>Téléphone (au format 07x 000 0000) : </label>
-          <input class="w3-input" id="phone" type="tel" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+          <input class="w3-input" name="prenom" type="text" required maxlength="40">
+          <label>Téléphone : </label>
+          <input class="w3-input" name="phone" type="tel" required>
           <label>Courriel : </label>
-          <input class="w3-input" id="mail" type="email" required pattern="^[A-Za-z]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$">
+          <input class="w3-input" name="mail" type="email" required pattern="^[A-Za-z]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$">
           <label>Message : </label>
-          <textarea class="w3-input" id="message" required></textarea>
+          <textarea class="w3-input" name="message" required minlength="10"></textarea><p></p>
           <!-- antibot -->
-          <input style="display:none" type="text" id="sec1" value="sec">
-          <input style="display:none" type="text" id="sec2" value="">
-          <input style="display:none" type="text" id="sec3" value="">
+          <label>Element de sécurité : indiquez le numéro postal (NPA) de Bulle</label>
+          <input class="w3-input" name="secu" required pattern="[1]{1}[6]{1}[3]{1}[0]{1}">
+          <input style="display:none" type="text" id="sec1" name="sec1" value="sec">
+          <input style="display:none" type="text" id="sec2" name="sec2" value="">
+          <input style="display:none" type="text" id="sec3" name="sec3" value="">
           <p></p>
           <input class="w3-input w3-orange" type="submit">
         </form>
