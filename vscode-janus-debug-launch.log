@@ -1,5 +1,0 @@
-INFO |00000.504|JanusDebugSession: launchRequest
-DEBUG|00000.504|JanusDebugSession: my workspace: d:\Darkness\MedDoc\GitHub\LAMAC
-DEBUG|00000.504|DebugAdapterIPC: connect to VS Code extension (sock15340)
-DEBUG|00000.506|DebugAdapterIPC: connected to VS Code extension
-INFO |00000.523|JanusDebugSession: disconnectRequest

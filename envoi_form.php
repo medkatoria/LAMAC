@@ -34,16 +34,11 @@
 
 <?php
 
-$navi = $_SERVER["HTTP_USER_AGENT"];
 $nom = valid_donnees($_POST["nom"]);
 $prenom = valid_donnees($_POST["prenom"]);
 $mail = valid_donnees($_POST["mail"]);
 $phone = valid_donnees($_POST["phone"]);
 $message = valid_donnees($_POST["message"]);
-$sec1 = valid_donnees($_POST["sec1"]);
-$sec2 = valid_donnees($_POST["sec2"]);
-$sec3 = valid_donnees($_POST["sec3"]);
-$secu = valid_donnees($_POST["secu"]);
 
 function valid_donnees($donnees){
   $donnees = trim($donnees);
@@ -52,28 +47,14 @@ function valid_donnees($donnees){
   return $donnees;
 }
 
-if (
-  (($sec1 = 'sec')
- 
- || ($sec2 = 'sec'))
- 
- || ($sec3 = '') 
- 
- ){
- 
 $mailSujet = "Prise de contact via le site internet";
-$mailBody = "Bonjour, \n Une personne a pris contact par l'intermédiaire du formulaire du site internet. \n Voici le message : 
-  \n Nom: $nom \n Prénom: $prenom\n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message. \n [Navigateur : $navi ; sec1: $sec1 sec2: $sec2 sec3: $sec3]";
-$mailBody2 = "Spam détecté : \n Nom: $nom \n Prénom: $prenom\n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message. \n [Navigateur : $navi ; secu: $secu sec1: $sec1 sec2: $sec2 sec3: $sec3]";
+$mailBody = "Bonjour, \n Une personne a pris contact par l'intermédiaire du formulaire du site internet. \n Voici le message : \n Nom: $nom \n Prénom: $prenom \n Email: $mail \n Téléphone: $phone \n\n Voici le message associé: $message.";
 $emailTo = "lamachineacoudre@bluewin.ch, $mail, igalaxia@gmail.com";
-$emailTo2 = "igalaxia@gmail.com";
 $headers = "From: lamachineacoudre@bluewin.ch";
 
 mail($emailTo, $mailSujet, $mailBody, $headers);
 
-} else {
-  mail($emailTo2, $mailSujet, $mailBody2, $headers);
-}
+
 ?>
 
 <body class="w3-light-grey">

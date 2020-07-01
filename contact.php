@@ -25,7 +25,16 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-138219591-1');
-  </script>
+
+$('form').submit(function() {
+if ($('input#secu').val().length != 0) {
+return false;
+}
+
+});
+</script>
+
+
   <style>
   html {
     font-family: "Lato", sans-serif
@@ -84,13 +93,13 @@
           <h3>Horaires</h3>
         </div>
         <div class="w3-row w3-margin-left">
-          <div class="w3-col" style="width:50px">
+          <!-- <div class="w3-col" style="width:50px">
             <i class="material-icons w3-xlarge">store</i>
           </div>
           <div class="w3-rest">
             <i>plus d'ouverture libre accès pour le moment.</i></p>
-            <!-- (Sur place : samedi, de 8 h 00 à 11 h 45)</p> -->
-          </div>
+            (Sur place : samedi, de 8 h 00 à 11 h 45)</p>
+          </div> -->
           <div class="w3-col" style="width:50px">
             <i class="material-icons w3-xlarge">event</i>
           </div>
@@ -143,27 +152,13 @@
           <input class="w3-input" name="mail" type="email" required pattern="^[A-Za-z]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$">
           <label>Message : </label>
           <textarea class="w3-input" name="message" required minlength="10"></textarea><p></p>
-          <!-- antibot -->
-          <label>Element de sécurité : indiquez le numéro postal (NPA) de Bulle</label>
-          <input class="w3-input" name="secu" required pattern="[1]{1}[6]{1}[3]{1}[0]{1}">
-          <input style="display:none" type="text" id="sec1" name="sec1" value="sec">
-          <input style="display:none" type="text" id="sec2" name="sec2" value="">
-          <input style="display:none" type="text" id="sec3" name="sec3" value="">
+          <input style="display:none" type="text" id="secu" name="secu1" value="" />
           <p></p>
           <input class="w3-input w3-orange" type="submit">
         </form>
       </div>
     </div>
     <!-- footer -->
-<script>
-
-$( '#form' ).submit(function() {
-
-$( '#sec2' ).val($( '#sec1' ).val());
-
-});
-</script>
-
 
     <footer class="w3-container w3-blue-gray w3-margin-top w3-center" style="max-width:1200px;">
       <p>Réalisé en W3.CSS</p>

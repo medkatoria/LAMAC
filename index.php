@@ -83,12 +83,12 @@
   <div class="w3-content w3-margin-top-large" style="max-width:1200px;">
     <!-- grille -->
     <div class="w3-row-padding">
-      <div class="w3-container w3-green w3-mobile w3-section w3-center w3-bottombar w3-topbar w3-border-black">
+      <!-- <div class="w3-container w3-green w3-mobile w3-section w3-center w3-bottombar w3-topbar w3-border-black">
         <h3 class="w3-large"><b>Afin de respecter les prescriptions d'hygiène édictées par le Conseil fédéral,
             <em><mark>l'accueil se fait uniquement sur rendez-vous</em></mark>, jusqu'à nouvel avis. Merci
             de votre compréhension.
         </b></h3>
-      </div>
+      </div> -->
       <!-- colonne gauche -->
       <div class="w3-half">
         <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
@@ -164,11 +164,11 @@
             <h3>Promotions du moment</h3> <!-- pas oublier de mettre à jour la page promo!!! -->
           </div>
           <div class="w3-container">
+                <img class="mySlides w3-image" src="/files/promo/001.jpg" style="width:100%">
                 <img class="mySlides w3-image" src="/files/promo/001.png" style="width:100%">
                 <img class="mySlides w3-image" src="/files/promo/002.png" style="width:100%">
-                <!-- <img class="mySlides w3-image" src="/files/promo/003.png" style="width:100%">
-                <img class="mySlides w3-image" src="/files/promo/004.png" style="width:100%">
-                <img class="mySlides w3-image" src="/files/promo/005.png" style="width:100%"> -->
+                <img class="mySlides w3-image" src="/files/promo/003.png" style="width:100%">
+                <!-- <img class="mySlides w3-image" src="/files/promo/005.png" style="width:100%"> -->
           </div>
 
           <div class="w3-container w3-center">
@@ -178,22 +178,27 @@
             </div>
             <button class="w3-button demo" onclick="currentDiv(1)">1</button>
             <button class="w3-button demo" onclick="currentDiv(2)">2</button>
-            <!-- <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+            <button class="w3-button demo" onclick="currentDiv(3)">3</button>
             <button class="w3-button demo" onclick="currentDiv(4)">4</button>
-            <button class="w3-button demo" onclick="currentDiv(5)">5</button> -->
+            <!--<button class="w3-button demo" onclick="currentDiv(5)">5</button> -->
           </div>
         </div>
 
 
         <div class="w3-display-container w3-margin-top w3-hide-small">
           <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
-            <h3>Creative Time - le magasine couture de Elna</h3>
+           <!-- <h3>Creative Time - le magasine couture de Elna</h3> -->
+            <h3>Promotion anniversaire des 80 ans d'elna</h3>
           </div>
           <div class="w3-container w3-center w3-section">
-            <object data="/files/creatime/creatime.pdf#view=fit" style="max-width:100%;height:500px"
-              type="application/pdf" alt="Creative Time <a href=" /files/creatime/creatime.pdf">Fichier à
+            <object data="/files/promo/anniversaire_elna.pdf#view=fit" style="max-width:100%;height:500px"
+              type="application/pdf" alt="Promotion anniversaire elna <a href="/files/promo/anniversaire_elna.pdf">Fichier à
               télécharger. Si la visionneuse ne fonctionne pas, vérifier votre bloqueur de
               publicité.</a></object>
+              <!-- <object data="/files/creatime/creatime.pdf#view=fit" style="max-width:100%;height:500px"
+              type="application/pdf" alt="Creative Time <a href=" /files/creatime/creatime.pdf">Fichier à
+              télécharger. Si la visionneuse ne fonctionne pas, vérifier votre bloqueur de
+              publicité.</a></object> -->
           </div>
         </div>
       </div>
@@ -209,6 +214,7 @@
           <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
             alt="Valid CSS!" />
         </a>
+        <a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by freepik - www.freepik.com</a>
       </p>
     </footer>
   </div>

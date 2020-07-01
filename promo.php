@@ -91,11 +91,11 @@
             <h3>Promotions du moment</h3>
           </div>
           <div class="w3-container">
+                <img class="mySlides w3-image" src="/files/promo/001.jpg" style="width:100%">
                 <img class="mySlides w3-image" src="/files/promo/001.png" style="width:100%">
                 <img class="mySlides w3-image" src="/files/promo/002.png" style="width:100%">
-                <!-- <img class="mySlides w3-image" src="/files/promo/003.png" style="width:100%">
-                <img class="mySlides w3-image" src="/files/promo/004.png" style="width:100%">
-                <img class="mySlides w3-image" src="/files/promo/005.png" style="width:100%"> -->
+                <img class="mySlides w3-image" src="/files/promo/003.png" style="width:100%">
+                <!-- <img class="mySlides w3-image" src="/files/promo/005.png" style="width:100%"> -->
           </div>
 
           <div class="w3-container w3-center">
@@ -105,13 +105,13 @@
             </div>
             <button class="w3-button demo" onclick="currentDiv(1)">1</button>
             <button class="w3-button demo" onclick="currentDiv(2)">2</button>
-            <!-- <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+            <button class="w3-button demo" onclick="currentDiv(3)">3</button>
             <button class="w3-button demo" onclick="currentDiv(4)">4</button>
-            <button class="w3-button demo" onclick="currentDiv(5)">5</button> -->
+            <!--<button class="w3-button demo" onclick="currentDiv(5)">5</button> -->
           </div>
         </div>
 
-      <div class="w3-diplay-container w3-mobile w3-margin-top">
+      <!-- <div class="w3-diplay-container w3-mobile w3-margin-top">
         <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
           <h3>Creative Time - le magasine couture de Elna</h3>
         </div>
@@ -121,7 +121,7 @@
             <p>Creative Time : <a href='files\creatime\creatime.pdf'>télécharger le magasine en PDF</a>!
           </object>
         </div>
-      </div>
+      </div> -->
 
       <div class="w3-diplay-container w3-mobile w3-margin-top">
         <div class="w3-container w3-card w3-amber w3-margin-top w3-margin-bottom w3-mobile">
